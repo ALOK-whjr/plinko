@@ -58,21 +58,21 @@ function draw() {
   
   
   //display the plinkos 
-  for (var i = 0; i < plinkos.length; i+1) {
+  for (var i = 0; i < plinkos.length; i = i + 1) {
     plinkos[i].display();   
   }
    
   //display the divisions
-  for (var k = 0; k < divisions.length; k+1) {
+  for (var k = 0; k < divisions.length; k = k + 1) {
     divisions[k].display();
   }
 
-/*  if(frameCount%50 === 0){
+  if(frameCount%50 === 0){
 	var i = random(100,700);
 	particles.push(new Particle(i,20));
   }
   //display the paricles 
   for (var p = 0; p < particles.length; p = p + 1) {
 	 particles[p].display();
-  }*/
+  }
 }
